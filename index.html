@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Monster Survivors - An exciting survival game where you battle against waves of monsters. Test your skills in this action-packed Unity game.">
+    <link rel="canonical" href="https://unitysurvivors.com/">
+    <title>Monster Survivors - Play Online Survival Game | UnitySurvivors.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .game-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .language-selector {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-sm relative">
+        <div class="language-selector">
+            <select id="languageSelect" class="px-3 py-1 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h1 class="text-3xl font-bold text-gray-900" data-i18n="title">Monster Survivors</h1>
+            <p class="mt-2 text-lg text-gray-600" data-i18n="subtitle">Survive the monster onslaught in this thrilling action-packed game!</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section class="mb-12">
+            <div class="game-container rounded-lg shadow-lg overflow-hidden">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        allowfullscreen 
+                        title="Monster Survivors Game">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4" data-i18n="about-title">About Monster Survivors</h2>
+                <p class="text-gray-600 leading-relaxed" data-i18n="about-content">
+                    Monster Survivors is an exhilarating survival game where you face endless waves of monsters. 
+                    Developed with Unity, this game offers smooth gameplay and stunning graphics. 
+                    Your mission is to survive as long as possible while defeating increasingly challenging enemies.
+                </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4" data-i18n="features-title">Game Features</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li data-i18n="feature1">Intense monster battles</li>
+                    <li data-i18n="feature2">Progressive difficulty levels</li>
+                    <li data-i18n="feature3">Smooth Unity-powered gameplay</li>
+                    <li data-i18n="feature4">Responsive controls for all devices</li>
+                    <li data-i18n="feature5">Regular updates and new content</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mt-12 bg-white p-6 rounded-lg shadow-sm">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4" data-i18n="how-to-play-title">How to Play</h2>
+            <p class="text-gray-600 leading-relaxed" data-i18n="how-to-play-content">
+                Simply load the game and start playing! Use your keyboard or touch controls to move your character 
+                and defeat the monsters. Collect power-ups and upgrades to enhance your abilities and survive longer.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-600" data-i18n="copyright">
+                &copy; 2024 UnitySurvivors.com - All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Monster Survivors",
+                subtitle: "Survive the monster onslaught in this thrilling action-packed game!",
+                "about-title": "About Monster Survivors",
+                "about-content": "Monster Survivors is an exhilarating survival game where you face endless waves of monsters. Developed with Unity, this game offers smooth gameplay and stunning graphics. Your mission is to survive as long as possible while defeating increasingly challenging enemies.",
+                "features-title": "Game Features",
+                "feature1": "Intense monster battles",
+                "feature2": "Progressive difficulty levels",
+                "feature3": "Smooth Unity-powered gameplay",
+                "feature4": "Responsive controls for all devices",
+                "feature5": "Regular updates and new content",
+                "how-to-play-title": "How to Play",
+                "how-to-play-content": "Simply load the game and start playing! Use your keyboard or touch controls to move your character and defeat the monsters. Collect power-ups and upgrades to enhance your abilities and survive longer.",
+                "copyright": "© 2024 UnitySurvivors.com - All rights reserved"
+            },
+            zh: {
+                title: "怪物幸存者",
+                subtitle: "在这款激动人心的动作游戏中，在怪物的猛攻中生存下来！",
+                "about-title": "关于怪物幸存者",
+                "about-content": "怪物幸存者是一款令人兴奋的生存游戏，您将面对无尽的怪物浪潮。这款游戏使用Unity开发，提供流畅的游戏体验和精美的图形。您的任务是在击败越来越具有挑战性的敌人的同时尽可能长时间地生存。",
+                "features-title": "游戏特点",
+                "feature1": "激烈的怪物战斗",
+                "feature2": "渐进式难度等级",
+                "feature3": "流畅的Unity游戏体验",
+                "feature4": "适用于所有设备的响应式控制",
+                "feature5": "定期更新和新内容",
+                "how-to-play-title": "如何玩",
+                "how-to-play-content": "只需加载游戏并开始玩！使用键盘或触摸控制来移动您的角色并击败怪物。收集能量提升和升级来增强您的能力并生存更长时间。",
+                "copyright": "© 2024 UnitySurvivors.com - 保留所有权利"
+            }
+        };
+
+        function updateLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        document.getElementById('languageSelect').addEventListener('change', (e) => {
+            updateLanguage(e.target.value);
+        });
+
+        // Set initial language
+        updateLanguage('en');
+    </script>
+</body>
+</html> 
