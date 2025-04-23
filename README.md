@@ -6,7 +6,7 @@ A responsive, SEO-optimized website for the Monster Survivors game, built with H
 
 - 🎮 Embedded game iframe for direct gameplay
 - 🌐 Responsive design for both desktop and mobile devices
-- 🌍 Multi-language support (English & Chinese)
+- 🌍 Multi-language support (English, Chinese & Korean)
 - 🔍 SEO optimized with proper meta tags and canonical URLs
 - 🎨 Modern UI with Apple-inspired design
 - 📱 Mobile-first approach
@@ -38,9 +38,10 @@ A responsive, SEO-optimized website for the Monster Survivors game, built with H
 
 ## Language Support
 
-The website supports two languages:
+The website supports three languages:
 - English (default)
-- Chinese
+- Chinese (中文)
+- Korean (한국어)
 
 Users can switch between languages using the language selector in the top-right corner.
 
